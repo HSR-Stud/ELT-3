@@ -1,0 +1,627 @@
+\section{Dynamik des Magnetfelds: Elektromagnetische Induktion}
+\subsection{Induktion durch bewegte Leiter im statischen Magnetfeld}
+
+\subsubsection{Magneto-, Elektrostatik}     											
+\begin{tabular}{ | m{9cm} | m{9cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=9cm]{images/BewegterLeiter.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item \textbf{Magnetostatik}
+		\item[] Gemäss der Magnetostatik, wirkt auf bewegte Ladung die Ampère-Kraft
+		\item[] $\mathbf{F_A}=q \mathbf{v\times B}$ 
+		\item \textbf{Elektrostatik}
+		\item[] Es ergibt sich durch die Ampèresche Kraft eine Ladungstrennung. Ein Leiterende wird eine positive, das andere eine negative Ladungsansammlung haben. Es ergibt sich die Coulomb-kraft $\mathbf{F_C}$
+		\item \textbf{Resultat}
+		\item[] Die Kräfte halten sich die Waage
+		\item[] $\mathbf{F_C+F_A}=0 \rightarrow \mathbf{F_C}=-q\mathbf{v\times B}$
+		\item[] \textcolor{purple}{\textbf{Influenz:} Wirkt ein elektrisches Feld auf einen Leiter, so trennen sich bekanntlich dessen Ladungsträger ebenfalls, dabei spricht man von Influenz.}
+		
+	\end{itemize}   	
+	\\ \hline
+\end{tabular} 
+
+\subsubsection{Induzierte elektrische Feldstärke}   
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+		\item[] Es kann nicht unterschieden werden, ob Ladungen in einem Leiter durch Ampèresche oder Coulombsche Kräfte getrennt wurden. Man normalisiert deshalb auf beiden Seiten die Ladung $q$.
+		\item $\mathbf{E_i=v\times B\quad}{=\dfrac{\mathbf{F_C}}{q}}$
+		\item[] $\mathbf{E_i}=$ induzierte elektrische Feldstärke
+		\item $u_i=vBl$
+		\item[] $u_i=$ induzierte Spannung
+		\item[] \textcolor{purple}{\textbf{Hinweis:} Verbindet man beispielsweise die beiden Enden des bewegten Leiters mit einer Last unmittelbar entlang dem Leiter, so wird in diesen Zuleitungen eine identische Spannung induziert und folglich nichts weiter passieren. Der Stromkreis muss also ausserhalb des Magnetfelds oder innerhalb, via einem nicht bewegten Leiter, passieren. Der Stromfluss erfolgt dabei in derselben Richtung wie die Spannung ansteht..}
+		
+	\end{itemize} 
+	&   	
+	\begin{itemize}
+		\item[] $u_i=[V]$
+	\end{itemize} 
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Induktionsgesetz}
+   \begin{tabular}{ | m{15cm} | m{3cm}  | }
+   	\hline
+   	Formeln & Einheiten \\ \hline
+   	\hline
+   	\begin{itemize}
+   		\item[] Die induzierte Spannung ist gleich der negativen Änderung des magnetischen Flusses
+   		\item $u_i(t)=-\dfrac{d\Phi}{dt}(t)$
+   	\end{itemize} 
+   	&   	
+   	\begin{itemize}
+
+   		\item[] $u_i=[V]$
+   	\end{itemize} 
+   	\\ \hline
+   \end{tabular}
+
+\subsubsection{Bewegungsinduktion}
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+		\item $\displaystyle\oint_{C(t)=\partial A(t)}\mathbf{E_i}(t)\cdot d\mathbf{l}=\displaystyle\oint_{C(t)=\partial A(t)}(\mathbf{v}(t)\times \mathbf{B})\cdot ds=-\displaystyle\oint_{C(t)=\partial S(t)}\dfrac{d\mathbf{A}}{dt}(t)\cdot d\mathbf{l}=-\dfrac{d\Phi}{dt}(t)$
+		\item[] $\Phi=\displaystyle\oint_{C=\partial S}\mathbf{A}\cdot d\mathbf{l}$
+		\item[] $\rightarrow$ $\mathbf{E_i}(t)=-\dfrac{d\mathbf{A}}{dt}(t)$
+	\end{itemize} 
+	&   	
+	\begin{itemize}
+		\item[] $E_i=[\frac{V}{m}]$
+		\item[] $B=[T]$
+		\item[]	$A=[\frac{Wb}{m}]$
+		\item[]	$v=[\frac{m}{s}]$
+		\item[] $\Phi=[Wb]$
+	\end{itemize} 
+	\\ \hline
+\end{tabular}
+
+\subsection{Induktion im zeitlich veränderlichen Magnetfeld}
+
+\subsubsection{Lenzsche Regel}
+\begin{itemize}
+	\item[] Der induzierte Strom wirkt seiner Ursache entgegen; die Ursache des induzierten Stroms ist die Änderung des magnetischen Flusses. Das Magnetfeld des induzierten Stroms verläuft entgegen der Änderung des Felds des magnetischen Flusses.
+\end{itemize} 
+
+\subsubsection{Arten von Induktion}
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+		\item[] $\Phi(t)=(BA)(t)=\begin{cases}
+		BA(t)$ Induktion durch bewegte Leiter$ \\
+		B(t)A $ Induktion durch zeitlich veränderliches Magnetfeld$ \\
+		\end{cases}$
+		\item[] $u_i(t)=-\dfrac{d\Phi}{dt}(t)=-A\dfrac{dB}{dt}(t)$
+	\end{itemize} 
+	&   	
+	\begin{itemize}
+		\item[] $u_i=[V]$
+		\item[] $B=[T]$
+		\item[]	$A=[m^2]$
+		\item[] $\Phi=[Wb]$
+	\end{itemize} 
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Ruheinduktion}
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+		\item[] $\displaystyle\oint_{C=\partial A}\mathbf{E_i}(t)\cdot d\mathbf{l}=-\displaystyle\int_{A}\dfrac{d\mathbf{B}}{dt}(t)\cdot d\mathbf{s}$
+	\end{itemize} 
+	&   	
+	\begin{itemize}
+		\item[] $E_i=[\frac{V}{m}]$
+\item[] $B=[T]$
+	\end{itemize} 
+	\\ \hline
+\end{tabular}
+
+\subsection{Totalinduktion}
+\subsubsection{Totalinduktion}
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+		\item[] $u_i(t)=\displaystyle\oint_{C(t)=\partial A(t)}\mathbf{E}(t)\cdot d\mathbf{l}=-\dfrac{d}{dt}\displaystyle\oint_{A(t)}\mathbf{B}(t)\cdot d\mathbf{s}=-\dfrac{d\mathbf{\Phi}}{dt}(t)$
+		\item[] \textcolor{purple}{\textbf{Hinweis:} Die gesamte Induktion, die sogenannte \emph{Totalinduktion} oder \emph{totale Induktion}, kann durch eine Bewegung innerhalb einem Magnetfeld oder durch zeitlich veränderliche Magnetfelder entstehen}
+		\item[] \textcolor{purple}{\textbf{Hinweis:} Um die Richtung des Stromes zu bestimmen, muss man zwingend anschauen wie sich die Ableitung $\dfrac{d\Phi}{dt}(t)$ des Flusses verhält, denn statisch betrachtet kann der Fluss $Phi$ in eine andere Richtung fliessen.}
+	\end{itemize} 
+	&   	
+	\begin{itemize}
+		\item[] $E_i=[\frac{V}{m}]$
+		\item[] $u_i=[V]$
+		\item[] $B=[T]$
+		\item[] $\Phi=[Tm^2]$
+	\end{itemize} 
+	\\ \hline
+\end{tabular}
+
+\subsection{Induktives Verhalten von Induktivitäten}
+\subsubsection{Erweiterung des Induktionsgesetzes}
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+		\item[] $u_i(t)=-\dfrac{d\Phi}{dt}(t)=-\dfrac{d(B(t)A_{Spule})}{dt}=-\dfrac{dB}{dt}(t)\underbrace{NA_{Windung}}_{A_{Spule}}$
+	\end{itemize} 
+	&   	
+	\begin{itemize}
+		\item[] $E=[\frac{V}{m}]$
+		\item[] $u_i=[V]$
+		\item[] $B=[T]$
+	\end{itemize} 
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Herkunft des magnetischen Flusses $\Phi$}
+\begin{itemize}
+	\item Die Herkunft ist nicht bekannt bzw. steht nicht im Zusammenhang mit dem Rest des betrachteten
+	elektromagnetischen Problems oder der Schaltung.
+	\item Oftmals handelt es sich dabei um die aufgefangene Flussdichte eines bekannten bzw. zu untersuchenden
+	elektrischen Stroms. Betrachtet man nun die induzierte Spannung im selben
+	Stromkreis, welcher diese Flussdichte verursacht, spricht man von \emph{Selbstinduktion}.
+	\item Sind die Stromkreise elektrisch nicht (bzw. zumindest nicht so unmittelbar) verbunden, spricht
+	man von \emph{Gegeninduktion}.
+\end{itemize}
+
+\subsubsection{Selbstinduktion (Ohmsches Gesetz der Induktivität)}
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+		\item[] $u_L(t)=\dfrac{d\Phi}{dt}(t)=\dfrac{di_L}{dt}(t) \qquad \rightarrow \qquad \dfrac{u_L(t)}{L}=\dfrac{di_L}{dt}(t)$
+		\item[] \textcolor{purple}{\textbf{Hinweis:} Die Selbstinduktion bestimmt das prinzipielle Verhalten einer Induktivität bzw. Spule: In ihr kann der Strom nicht unmittelbar ändern; er folgt erst durch eine über
+			eine gewisse Zeit angelegte Spannung.}
+	\end{itemize} 
+	&   	
+	\begin{itemize}
+		\item[] $\Phi=[Tm^2]$
+		\item[] $u_L=[V]$
+		\item[] $B=[T]$
+	\end{itemize} 
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Ladevorgang}										
+\begin{tabular}{ | m{9cm} | m{9cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=9cm]{images/SchemaL1.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item \textbf{Ströme zum Zeitpunkt $\mathbf{t=0}$ }
+		\item[] $i_L(0)=0$
+		\item[] $I_0=i_R(0)+\underbrace{i_L(0)}_{=0}=\dfrac{u(0)}{R}$
+		\item \textbf{Spulenstrom $\mathbf{i(t)}$ während des Ladevorgangs}
+		\item[] $i_L(t)=\underbrace{\dfrac{U_0\tau}{L}}_{U_0/R}\big(1-e^{-t/\tau}\big)$
+		\item \textbf{Spannung zum Zeitpunkt $\mathbf{t=0}$ }
+		\item[] $u(0)=U_0e^{-0/\tau}=U_0=RI_0$
+		\item \textbf{Spannung $\mathbf{u(t)}$ während des Ladevorgangs}
+		\item[] $u(t)=U_0e^{-t/\tau}$		
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+   	\subsubsection{Zeitlicher Vorgang}										
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+		\item[] $\tau = \dfrac{L}{R}$
+		\item[] \textcolor{purple}{\textbf{Hinweis:} Auch hier stellt sich ab $t\approx5\tau$ näherungsweise der stationäre Zustand ein und der Ladevorgang wird als abgeschlossen bezeichnet.}
+	\end{itemize} 
+	&   	
+	\begin{itemize}
+		\item[] $\tau,t = [s]$
+		\item[] $R=[\Omega]$
+		\item[] $L=[H]$	
+	\end{itemize} 
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Entladevorgang}										
+\begin{tabular}{ | m{9cm} | m{9cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=9cm]{images/SchemaL2.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item \textbf{Spannungswerte zum Zeitpunkt $\mathbf{t=0}$ }
+		\item[] $u(0)=U_0=i_L(0)R$
+		\item \textbf{Strom $\mathbf{i_L(t)}$ während des Entladevorgangs}
+		\item[] $i_L(t)=\dfrac{U_0}{R}e^{-t/\tau}$ 
+	
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Rechtshandsystem}
+\begin{minipage}{.1\textwidth}
+	\tabImg[width=18cm]{images/Rechtshandsystem.png}
+\end{minipage}
+
+\subsubsection{Verlustbehaftete Induktivitäten}										
+\begin{tabular}{ | m{7cm} | m{11cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=7cm]{images/Spuleidealreal.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item \textbf{Ohmsches Gesetz einer realen Induktivität}
+		\item[] $u(t)=u_R(t)+u_L(t)=Ri(t)+L(\dfrac{di}{dt(t)})$	
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Serieschaltung ungekoppelter Induktivitäten}										
+\begin{tabular}{ | m{11cm} | m{7cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=11cm]{images/SerieschaltungL.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item[] $L_{tot}=L_1+L_2+...+L_n=\displaystyle\sum_{n}L_n$	
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Parallelschaltung ungekoppelter Induktivitäten}										
+\begin{tabular}{ | m{11cm} | m{7cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=11cm]{images/ParallelschaltungL.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item[] $L_{tot}=L_1\parallel L_2\parallel ... \parallel L_n = \big(\displaystyle\sum_{n}\dfrac{1}{L_n}\big)^{-1}$	
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Gegeninduktion}
+\begin{tabular}{ | m{12cm} | m{6cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=12cm]{images/Gegeinduktion.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item[] Änderndes Magnetfeld einer stromdurchflossenen Spule, welches eine zweite Spule durchsetzt induziert eine Spannung in dieser (\textit{Gegendinduktionsspannung})
+			
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+\begin{itemize}
+\item \textcolor{green}{Spule 1} ist via Widerstand $R_1$ an eine zeitlich veränderliche Spannung $u_1(t)$ angeschlossenen, welche den \textit{Primärstrom} $i_1(t)$, in der angegebenen Richtung verursacht
+\item Primärstrom $i_1$ hat ein  Primärmagnetfeld  $\Phi_{11}$ zur Folge; die Doppel-Indizes bedeuten dabei "von Spule 1 in Spule 1", mit dem Ort der Wirkung an $erster$ Stelle und dem Ort der $Ursache$ an zweiter Stelle. Dieser magnetische Fluss und seine Ursache, der Strom $i(t)$, sind gemäss der Rechte-Hand-Regel miteinander verknüpft
+\item Strom und Spannung sind gemäss Selbstinduktion so miteinander verknüpft: $u_1(t)=R_1i_1(t)+\dfrac{d\Phi_1}{dt}(t)=R_1i_1(t)+u_{i1}(t)$
+\item Ein Teil $\Phi_{21}(t)$ des magnetischen Flussses in Spule 2 wird von einer zweiten \textcolor{red}{Spule 2} eingefangen. Es wird maximal der gesamte magnetische Fluss aufgefangen der durch den Strom $i_1(t)$ herrührt. $\Phi_{21}(t)\leq\Phi_{11}(t)$. Dazu wird der Kopplungsfaktor $k_{21}$ verwendet: $\Phi_{21}(t)=k_{21}\Phi_{11}(t)$
+\item Die Änderung dieses Flusses induziert in Spule 2 eine Spannung:
+\item[] $u_{i2}(t)=-\dfrac{d\Phi}{dt}(t)=\dfrac{d\Phi_{21}}{dt}(t)=\dfrac{d(k_{21}\Phi_{11})}{dt}(t)\overset{\frac{dk}{dt}=0}{=}k_{21}=\dfrac{d\Phi_{11}}{dt}=\dfrac{d}{dt}\big(Mi_1(t)\big)\overset{\frac{dM}{dt}=0}{=}M\dfrac{di_1}{dt}(t)$
+\item Als Sekundäreffekt ergibt sich durch die induzierte Spannung ein induzierter Strom. Gemäss Lenz wirkt das dadurch erzeugte Magnetfeld des induzierten Stroms der induktionsursache entgegen, d.h. sein magnetischer Fluss ist der Änderung $\dfrac{d\Phi_{21}}{dt}(t)$ entgegengesetzt. Es muss gelten:
+\item[] $\mathring{u}_2 = \displaystyle\int_{C2}=\mathbf{E_2}\cdot d\mathbf{l}=u_2(t)-R_2i_2(t)=u_{i2}(t)=\dfrac{d\Phi_{2}}{dt}(t)$
+\item Der Fluss in der zweiten Spule $\Phi_{2}(t)$ setzt sich aus dem eingekoppelten und dem eigenen Fluss zusammen:
+\item[] $\Phi_{2}(t)=\Phi_{21}(t)+\Phi_{22}(t)=k_{21}(t)\Phi_{11}(t)+\Phi_{22}(t)=Mi_1(t)+L_2i_2(t)$
+\item Das Magnetfeld des Sekundärstroms koppelt über dieselben Pfade wie dasjenige des Primärstroms auf die andere Seite ein. Somit wird ein Teil des Sekundärmagnetfelds als $\Phi_{12}$ wieder auf der Primärseite aufgefangen. Es gilt wieder: 
+\item[] $\mathring{u}_1=\displaystyle\int_{C1}\mathbf{E_1}\cdot d\mathbf{l} =u_1(t)-R_1i_1(t)=u_{i1}(t)=\dfrac{d\Phi_1}{dt}(t)$
+\item Dabei erfolgt wieder für den Gesamtfluss:
+\item[] $\Phi_1(t) = \Phi_{11}(t) +\Phi_{12}(t)=\Phi_{11}(t)+k_{12}\Phi_{22}
+(t)=L_1i_1(t)+Mi_2(t)$
+\item Auf beiden Seiten ergibt sich eine Wirkung vom eigenen Strom und von der Feldeinwirkung des jeweils anderen Stroms, während die treibenden Kräft die Spannungen sind. Es ergibt sich das Gleichungssystem:
+\item[] $u_1(t)=U_{R1}(t)+u_{i1}(t)=R_1i_1(t)+L_1\dfrac{di_1}{dt}(t)+M\dfrac{di_2}{dt}(t)$	
+\end{itemize}
+
+   	\subsubsection{Koppelfaktoren}										
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+		\item[] $k_{21}=\dfrac{\Phi_{21}}{\Phi_{11}}=\dfrac{M}{L_1} \rightarrow k_{12}=\dfrac{\Phi_{12}}{\Phi_{22}}=\dfrac{M}{L_2} $
+		\item[] $M=k_{21}L_1 \rightarrow M=\sqrt{k_{21}L_1k_{12}L_2}=\pm\sqrt{L_1L_2}$
+		\item[] \textcolor{purple}{\textbf{Hinweis:} Der Kopplungsfaktor ist unabhängig von den Windungszahlen und somit für beide Seiten des Gesamtsystems gleich, wie auch die Gegeninduktivität $M$.}
+		\item[] \textcolor{purple}{\textbf{Hinweis:} Addieren sich die magnetische Flüsse zweier positiver Ströme in einer Leiterschleife, addieren sich auch deren induzierte Spannungen der Selbst- und Gegeninduktion in der gleichen Bezugsrichtung. Sind die Flüsse entgegengesetzt, dann wirkt sich die Gegeninduktion mit negativem Vorzeichen aus. Es ist somit wichtig zu wissen, in welcher Ausrichtung die magnetischen Flüsse aufeinander treffen.}
+	\end{itemize} 
+	&   	
+	\begin{itemize}
+		\item[] $L,M = [H]$
+		\item[] $k= [1]$
+	\end{itemize} 
+	\\ \hline
+\end{tabular}
+
+   	\subsubsection{Gegeninduktivität}										
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+		\item[] Flussdichte in Sekundärschleife $\Phi_{21}=\displaystyle\oint_{C_2}=\mathbf{A_1}\cdot d\mathbf{l}$
+		\item[] Magnetisches Vektoprpotential vom Strom $i_1$ aus der Primärschleife $\mathbf{A_1}=\dfrac{\mu_0}{4\pi}\displaystyle\oint_{C_1}\dfrac{i_1d\mathbf{l}}{R}$
+		\item[]  Neumann-Formel $\dfrac{\Phi_{21}}{i_1}=\dfrac{\mu_0}{4\pi}\displaystyle\oint_{C_2}\displaystyle\oint_{C_1}\dfrac{d\mathbf{l_1}\cdot d\mathbf{l_2}}{R}$
+	\end{itemize} 
+	&   	
+	\begin{itemize}
+		\item[] $M = [H]$
+		\item[] $\Phi= [Wb]$
+		\item[] $A=[\dfrac{Wb}{m}]$
+		\item[] $i=[A]$
+	\end{itemize} 
+	\\ \hline
+\end{tabular}
+
+\subsection{Der Transformator}
+\subsubsection{Anwendungen von Transformatoren}
+\begin{itemize}
+	\item Veränderung (Transformation) der Amplitude einer Wechselspannung (z.B. 16 kV auf 400 V)
+	bzw. eines Wechselstroms. Das Produkt aus Spannung und Strom — und somit die Leistung
+	\item Gleichstrommässige (galvanische) Trennung zweier elektrischer Stromkreise.
+	\item Gleichstromunterdrückung mittels Common-Mode-Chokes
+	\item Anpassung eines Verbrauchers an eine Quelle, so dass die grösstmögliche Leistung an den
+	Verbraucher abgegeben wird.
+\end{itemize}
+
+   	\subsubsection{Transformatorgleichungen}										
+\begin{tabular}{ | m{7.5cm} m{7.5cm} | m{3cm}  | }
+	\hline
+	Formeln & & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+		\item \textbf{Allgemein}
+		\item[] $u_1(t)=L_1\dfrac{di_1}{dt}(t)+M\dfrac{di_2}{dt}(t)$
+		\item[] $u_2(t)=M\dfrac{di_1}{dt}(t)+L_2\dfrac{di_2}{dt}(t)$
+		
+		\item \textbf{In kompakter Darstellung}
+		\item[] $\mathbf{u}(t)=\mathbf{L}\dfrac{d\mathbf{i}}{dt}(t)$
+	\end{itemize} 
+	&   	
+\begin{itemize}
+	\item \textbf{In Matrixform}
+	\item[] $\begin{bmatrix}
+	u_1(t)\\u_2(t)
+	\end{bmatrix}=\begin{bmatrix}
+	L_1&M \\M&L_2
+	\end{bmatrix}\dfrac{d}{dt}\begin{bmatrix}
+	i_1(t)\\i_2(t)
+	\end{bmatrix}$
+	\item[]
+	\item[]
+	\item[]
+
+\end{itemize}
+&
+	\begin{itemize}
+	\item[] $M = [H]$
+	\item[] $\Phi= [Wb]$
+	\item[] $A=[\dfrac{Wb}{m}]$
+	\item[] $i=[A]$
+\end{itemize} 
+	\\ \hline
+\end{tabular}
+
+\newpage
+
+\subsubsection{Bestimmung Der Wicklungssinne und Polaritäten via Ebnetersches Verfahren} 
+\begin{tabular}{ | m{7cm} | m{11cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=6cm]{images/Punktkonvention.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item[] Man markiert bei beiden Spulen ein Wicklungsende derart mit einem Punkt \textcolor{red}{$\bullet$}, dass beim Durchlaufen der Wicklungen vom zugehörigen Punkt aus der gemeinsame Kern im gleichen Sinn umkreist wird. Wenn dann also beide Ströme bei ihrem Punkt hineinfliessen, haben die Flüsse gleiche Richtung. Bezüglich der Spannungen gilt, dass die markierten Wicklungsenden gleiche Polarität haben. Ist der Eisenkern verzweigt, dann müssen die Punkte für je zwei Wicklungen separat festgelegt werden.
+		\item[] \textcolor{green}{$\mathbf{\rightarrow}$} $=$ Anfangspfeil
+		\item[] \textcolor{orange}{$\mathbf{\rightarrow}$} $=$ Endpfeil
+		\item[] \textcolor{purple}{\textbf{Hinweis:} Bei Transformatoren mit mehreren Schenkel können schnell Fehler auftreten. Um mit dem Vorzeichen auf Nummer sicher zu gehen kann man für die Lösung immer die Lenzsche Regel, kombiniert mit der Rechten-Hand-Regel verwenden}
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+\newpage
+
+\subsubsection{Transformator im Leerlauf, Kurzschluss und bei Belastung} 
+\begin{tabular}{ | m{7cm} | m{11cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=7cm]{images/Transformatorallgemein.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item \textbf{\underline{Allgemein}}
+		\item[] Übersetzungsverhältnis $\ddot{u}=\dfrac{N_1}{N_2}$
+		\item \textbf{\underline{Leerlauf}}
+		\item[] $u_1(t)=N_1\dfrac{d\Phi}{dt}(t)$ bzw. $u_2(t)=N_2\dfrac{d\Phi}{dt}(t)$
+		\item[] $\dfrac{u_{2,LL}}{u_1(t)}=\dfrac{N_2}{N_1} \rightarrow u_{2,LL}=u_1\dfrac{N_2}{N_1}=\dfrac{u_1}{\ddot{u}}$
+		\item[] Wegen $i_2(t)=0 \rightarrow u_1(t)=L_1\dfrac{di_1}{dt(t)}$ bzw. $u_2(t)=M\dfrac{di_1}{dt}(t)$
+		\item \textbf{\underline{Kurzschluss}}
+		\item[] $u_2(t)=N_2\dfrac{d\Phi}{dt}(t)=0 \rightarrow \dfrac{d\Phi}{dt}(t)=0$
+		\item[] $L_1\dfrac{di_1}{dt}(t)=-M\dfrac{di_2}{dt}(t)$
+		\item[] $\dfrac{i_{2,KS}}{i_1}=\dfrac{L_1}{M}=\dfrac{N_1}{N_2}=\ddot{u}$
+		\item \textbf{\underline{Belastung}}
+		\item[] $u_1(t)=\big(L_1-\dfrac{M^2}{L_2}\big)\dfrac{di_1}{dt}(t)-\dfrac{M}{L_2}R_Li_2(t)$
+		\item[] Idealer Transformator ($k=1$) $\rightarrow$ $i_2(t)=-\dfrac{1}{\ddot{u}}\dfrac{U_1(t)}{R_L}$
+		\item[] $R_{in}=\dfrac{u_1(t)}{i_1(t)}=R_L\dfrac{M^2}{L_2^2}=R_L\dfrac{L_1}{L_2}=R_L\dfrac{N_1^2}{N_2^2}=R_L\ddot{u}^2$
+		\item[] \textcolor{purple}{\textbf{Hinweis:} Bei $R_{in}$ handelt es sich um den Widerstand $R_L$, allerdings wenn man ihn von der Eingangsseite (wo sich $u_1$ befindet) her betrachtet }
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Ersatzschaltungen}
+\paragraph{Idealer Transformator}
+\begin{tabular}{ | m{18cm}  | }
+	\hline
+	Formeln \\ \hline
+	\hline
+
+	\begin{itemize}
+		\item ideale Kopplung (keine Streuung): $k=1$ bzw. $M=\sqrt{L_1L_2}$
+		\item vernachlässigbare Wirkwiderstände $R_1=R_2=0$
+		\item vernachlässigbaren magnetischen Widerstand des magnetischen Kreises, somit undendlich grosse Selbstinduktivitäten $L_1$ und $L_2$
+		\item keine Eisenverluste und lineares Verhalten
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\newpage
+\paragraph{Ideal gekoppelter, verlustloser Transformator}
+\begin{tabular}{ | m{9cm} | m{9cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=9cm]{images/idealgekoppeltertrafo.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item Induktivitäten $L_1$ und $L_2$ weisen endliche Werte auf
+		\item $\ddot{u}=\dfrac{N_1}{N_2}=\sqrt{\dfrac{L_1}{L_2}}>0 \rightarrow M=\sqrt{L_1L_2}$ 
+		\item Bei sekundärseitigem Leerlauf $i_2(t)=0$ fliesst bei einer Spannung an der Primärseite $u_1(t) \neq 0$ durch die Anwesenheit der endlichen Induktivität $L_1$ dennoch ein Magnetisierungsstrom $i_\mu(t)$
+		\item $u_1(t)=L_1\dfrac{di_1}{dt}(t)\neq 0 \rightarrow i_\mu(t)=i_1(t)|_{i_2(t)=0}$
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\paragraph{Verlustloser Transformator (mit Streuung) }
+\begin{tabular}{ | m{9cm} | m{9cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=9cm]{images/verlustlosertrafo.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item Zusätzliche Nichtidealität $L_{\sigma 1} \rightarrow$ Magnetfeld ist nicht an der Kopplung zur Sekundärseite beteiligt
+		\item Hauptinduktivität 
+		\item[] $L_h=kL_1=\sqrt{\dfrac{L_1}{L_2}}k\sqrt{L_1L_2}=\ddot{u} M$
+		\item Streuinduktivität auf der Primärseite 
+		\item[] $L_{\sigma 1} =(1-k)L_1=L_1-\ddot{u} M$
+		\item Streuinduktivität auf der Sekundärseite 
+		\item[] $L_{\sigma_2}=(1-k)L_2=L_2-\dfrac{M}{\ddot{u}}$
+		\item Übertragungsverhältnisse $\dfrac{L_1}{L_2}=\dfrac{L_{\sigma_1}}{L_{\sigma_2}}=\dfrac{N_1^2}{N_2^2}=\ddot{u}^2$
+		\item Magnetisierungsstrom $i_\mu(t)=i_1(t)-\dfrac{i_2(t)}{\ddot{u}}$
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+\newpage
+
+\paragraph{Verlustbehafteter Transformator }
+\begin{tabular}{ | m{9cm} | m{9cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=9cm]{images/verlustbehaftetertrafo.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item Widerstände $R_{C,n}$ sind ohmsche Widerstände der Wicklung
+		\item Widerstand $R_{Fe}$ erzeugt Wirbelstrom- und Hystereseverluste des Eisens
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\subsection{Verluste im Zusammenhang mit zeitlich veränderlichen Magnetfeldern}
+\subsubsection{Hysterese-/Magnetisierungsverluste}
+\begin{tabular}{ | m{6cm} | m{12cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=6cm]{images/Hystereseverluste.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item Magnetische Energiedichte
+		\item[] $w_m(t)=\displaystyle\int_{0}^{B(t)}\mathbf{H}\cdot d\mathbf{B}=\dfrac{1}{\mu}\displaystyle\int_{0}^{B(t)}B dB=\dfrac{B^2}{2\mu}=\dfrac{\mathbf{B}(t)\mathbf{H}(t)}{2}=\dfrac{1}{2}\mu H^2(t)$
+		\item Magnetische Energie
+		\item[] $W_m(t)=\dfrac{1}{2}\displaystyle\int_{V}\mathbf{B}(t)\mathbf{H}(t)dv$
+		\item Erklärung zur Figur
+		\item[] Im Aufbau der Magnetisierung entspricht das Integral der Fläche, welche die Magnetisierungskurve mit der B-Achse einschliesst.
+		\item[] Im Abbau wird bei ferromagnetische Materialien durch die zurückbleibende Remanenz nicht mehr die ganze Energie abgegeben, die \textcolor{yellow}{Gelbe} Fläche kriegt man wieder zurück. Der Rest  (\textcolor{red}{Rote} Fläche) ist somit investierte Energie welche nicht mehr zurückerhalten werden kann 
+		\item Gesamte Verlustenergiedichte $w_h=\displaystyle\oint_{C_{Hysterese}}HdB \underbrace{\propto}_{Proportional}A_{Hysterese}$ 
+		\item Durchschnittliche Verlustleistung $P_h\propto \dfrac{A_{Hysterese}V}{T}=A_{Hysterese}Vf \rightarrow T=Vorgangsdauer$
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\newpage
+\subsubsection{Wirbelströme}
+\begin{tabular}{ | m{6cm} | m{12cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=6cm]{images/lamelliert.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item Bei elektromagnetischer Induktion werden in allen elektrisch leitenden Materialien Spannungen und Ströme in Form kleiner geschlossener Stromkreise \textit{Wirbelströme} induziert. Sie haben folgende Wirkungen:
+		\begin{itemize}
+			\item Lenz: Das Magnetfeld der Wirbelströme wirkt dem induzierenden Magnetfeld entgegen $\rightarrow$ es entstehen Bewegungen welche der Ursache entgegenwirken
+			\item Es ergeben sich ohmsche Leitungsverluste insbesondere in ferromagnetischen Teilen, welche von starken magnetischen Flüssen durchströmt werden. 
+		\end{itemize}
+	\item Wirbelströme sind zu minimieren. Möglich wird dies, indem man die elektrische Leitfähigkeit reduziert, indem man die Strombahnen in Form von lamellierten Eisenkernen unterbricht. 
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

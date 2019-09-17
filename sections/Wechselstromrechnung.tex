@@ -1,0 +1,486 @@
+\section{Wechselstromrechnung}
+\subsection{Einführung}
+\subsubsection{Periodische Vorgänge}
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten  \\ \hline
+	\hline
+	\begin{itemize}
+		\item \textit{Funktion der Zeit} $a(t)=a(t-nT) \qquad \forall\ n \in \mathbb{Z}$
+		\item[] $\forall=f\ddot{u}r\ alle\qquad \exists=existiert\qquad \nexists=existiert\ nicht$
+		\item $f=\dfrac{1}{T} \qquad \omega=2\pi f$
+		\item[] $T=Periodendauer\quad n=Anzahl\ Perioden\quad f=Grundfrequenz \quad \omega=Kreisfrequenz$
+		\
+	\end{itemize}   
+	&
+	\begin{itemize}
+		\item[] $T=[s]$
+		\item[] $n=[1]$
+		\item[] $f=[\frac{1}{s}]$
+		\item[] $\omega=[\frac{1}{s}]$
+	\end{itemize} 	
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Bezeichnungen}
+\begin{tabular}{ | m{6cm} | m{12cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=6cm]{images/Wechselgroesse.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item[\textcircled{1}] Scheitelwert, Amplitude
+		\item[\textcircled{2}] Spitze-Spitze Wert \textit{peak to peak}
+		\item[\textcircled{3}] Effektivwert
+		\item[\textcircled{4}] Effektivwert
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+\newpage
+
+\subsubsection{Mittelwerte periodischer Zeitfunktionen}
+\begin{tabular}{ | m{15.5cm} | m{2.5cm}  | }
+	\hline
+	Formeln & Einheiten  \\ \hline
+	\hline
+	\begin{itemize}
+		\item \textbf{Linearer Mittelwert (arithmetischer Mittelwert, Gleichwert, Gleichanteil)}
+		\item[] $\overline{x}=\dfrac{1}{T}\displaystyle\int_{0}^{T}x(t)dt$
+		\item[] \textcolor{purple}{\textbf{Hinweis:} Der Gleichwert wird auch als $Offset$ bezeichnet und entspricht dem DC-Anteil des Signals. Eine Funktion ohne Offset bezeichnet man als Wechselgrösse und eine mit Offset als Mischgrösse. }
+		\item \textbf{Gleichrichtwert (Betragsmittelwert)}
+		\item[] $\overline{|x|}=\dfrac{1}{T}\displaystyle\int_{0}^{T}|x(t)|dt$
+		\item \textbf{Leistung}
+		\item[] $P=\dfrac{R}{T}\underbrace{\displaystyle\int_{0}^{T}i^2(t)dt}_{i_{eff}^2=I^2}=\dfrac{1}{RT}\underbrace{\displaystyle\int_{0}^{T}u^2(t)dt}_{u_{eff}^2=U^2}$
+		\item \textbf{Effektivwert}
+		\item[] $x_{eff}=\sqrt{\dfrac{1}{T}\displaystyle\int_{0}^{T}x^2(t)dt}$
+		\item[] \textcolor{purple}{\textbf{Hinweis:} Der Effektivwert einer Spannung oder eines Stroms entspricht jener Gleichspannung, welche am Ohmschen Widerstand dieselbe mittlere Leistung umsetzen würde. }
+	\end{itemize}   
+	&
+	\begin{itemize}
+		\item[] $\overline{x}=[x]$
+		\item[] $\overline{|x|}=[x]$
+		\item[] $P=[W]$
+		\item[] $x_{eff}=[x]$
+	\end{itemize} 	
+	\\ \hline
+\end{tabular}
+
+\subsection{Sinusförmige Vorgänge und Zeitfunktionen}
+\subsubsection{Reelle Darstellung von sinusförmigen Zeitfunktion}
+\begin{tabular}{ | m{18cm}  | }
+	\hline
+	Formeln \\ \hline
+	\hline
+	
+	\begin{itemize}	
+		\item \textbf{Amplituden-/Phasen-Darstellung ("technische Darstellung")}
+		\item[] $u(t)=\hat{U}\cos(\omega t+\varphi_0)$
+		\item \textbf{Trigonometrische bzw. "Cos-/Sin-Darstellung" ("mathematische Darstellung")}
+		\item[] $u(t)=a\cos(\omega t)+b\sin(\omega t)$
+		\item \textbf{Umrechnung der beiden Darstellungen}
+		\item[] $\hat{U}=\sqrt{a^2+b^2}\qquad \varphi=-\arctan\dfrac{b}{a}\qquad \dfrac{b}{a}=\dfrac{-\hat{U}\sin\varphi_0}{\hat{U}cos}=-\tan\varphi_0$
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Kennwerte und Eigenschaften}
+\begin{tabular}{ | m{18cm}  | }
+	\hline
+	Formeln \\ \hline
+	\hline
+	
+	\begin{itemize}	
+		\item[] $u(t)=\hat{U}\sin(\omega t+\varphi) \quad \rightarrow \quad U=U_{eff}=\dfrac{\hat{U}}{\sqrt{2}}$
+		\item[] \textcolor{purple}{\textbf{Hinweis:}Variablen von Amplituden (Scheitelwerte) von Wechselspannungsgrössen  werden mit einem Zirkumflex versehen, während herkömmliche bezeichnete Werte automatisch als Effektivwerte angesehen werden}
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\newpage
+
+\subsubsection{Zeigerdarstellung}
+\begin{tabular}{ | m{9cm} | m{9cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=9cm]{images/Zeigerdiagramm.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item \textbf{Zeigerdiagramm und zugehörige zeitabhängige Funktion}
+		\item[] Zeiger rotiert mit der Winkelgeschw. $\omega$
+		\item[] Die Zeigerlänge entspricht der Amplitude $\hat{U}$
+		\item[] Zum Zeitpunkt $t=0$ schliesst der Zeiger mit der Bezugsachse den Nullphasenwinkel $\varphi_0$ ein
+		\item \textbf{Zeigerdiagramm zur Addition zweier Spannungszeiger}
+		\item[] für $u_1$ und $u_2$ werden die Zeiger zur Zeit $t=0$ gezeichnet.
+		\item[] Die Spannung $u$ könnte als Summe der porjektionen dieser Zeiger auf die Bezugsachse gewonnen werden (Vorzeichen berücksichtigen).
+		\item[] Einfacher: Zeiger von $u_1$ und $u_2$ vektoriell addieren und den Summenzeiger auf die Bezugsachse projizieren.
+		\item[] Diese Überlegung gilt auch für beliebige Zeitpunkte $t\neq 0$ (Oft ist man aber nur an den Zeigern für $t=0$ intressiert)
+	\end{itemize}   	
+	\\ \hline
+	\end{tabular}
+
+\subsubsection{Komplexe Darstellung}
+\begin{tabular}{ | m{9cm} | m{9cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=9cm]{images/KomplexZeiger.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item Eulersche Formel
+		\item[]  $e^{\pm j\alpha}=\cos\alpha\pm j\sin\alpha=Re\ e^{j\alpha}\pm j\ Im\ e^{j\alpha}$
+		\item Eulersche Identität
+		\item[] $e^{j\pi}+1=0$
+		\item komplexe Exponentialfunktionen
+		\item[] $\cos\alpha=\dfrac{e^{j\alpha}+e^{-j\alpha}}{2}\qquad \sin\alpha=\dfrac{e^{j_alpha}-e^{-j\alpha}}{2j}$
+		\item komplexe Funktion
+		\item[] $\underline{u}(t)=\hat{U}\cos(\omega t+\varphi_0)+j\hat{U}\sin(\omega t+\varphi_0)$
+		\item komplexe Funktion in polarer Form
+		\item[] $\underline{u}(t)=\hat{U}e^{j(\omega t+\varphi_0)}=\hat{U}e^{j\omega t}e^{j\varphi_0}=\underline{\hat{U}}e^{j\omega t}$
+		\item komplexe Amplitude
+		\item[] $\underline{\hat{U}}=\hat{U}e^{j\varphi_0}=\hat{U}\angle \varphi_0$
+		\item[] \textcolor{purple}{\textbf{Hinweis:} Der Winkel $e^{j\omega t}$ bewirkt eine andauernde, gleichförmige Rotation des Zeigers der komplexen Amplitude $\underline{\hat{U}}$ mit der Winkelgeschwindigkeit $\omega$}	
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\newpage
+
+\subsubsection{Komplexe Berechnung}
+\begin{tabular}{ | m{18cm}  | }
+	\hline
+	Formeln \\ \hline
+	\hline
+	
+	\begin{itemize}	
+		\item \textbf{Addition/Subtraktion}
+		\item[] $u_1(t)=\hat{U}_1\cos(\omega t+\varphi_1)=Re\big(\underline{\hat{U}}_1e^{j\omega t}\big) \qquad \qquad u_2(t)=\hat{U}_2\cos(\omega t+\varphi_2)=Re\big(\underline{\hat{U}}_2e^{j\omega t}\big)$
+		\item[] $u(t)=u_1(t)+u_2(t)=Re\big(\big(\underline{\hat{U}}_1+\underline{\hat{U}}_2\big)e^{j\omega t}\big)=Re\big(\underline{\hat{U}}e^{j\omega t}\big)$
+		\item \textbf{Multiplikation mit reellen Konstanten}
+		\item[] $u(t)=Ri(t)=R\hat{I}\cos(\omega t+\varphi_0)=\hat{U}\cos(\omega t+\varphi_0)$
+		\item[] $R\underline{i}(t)=R\underline{\hat{I}}e^{j\omega t}=\underline{\hat{U}}e^{j\omega t}=\underline{u}(t)$
+		\item \textbf{Multiplikation mit komplexen Konstanten}
+		\item[] $\underline{Z}=Ze^{j\varphi z}$
+		\item[] $\underline{Zi}(t)=Ze^{j\varphi z}=Ze^{j\varphi z}\hat{I}e^{j\varphi_0}e^{j\omega t}=\underbrace{Z\hat{I}e^{j\varphi z}e^{j\varphi_0}}_{\underline{\hat{U}}}e^{j\omega t}=\underline{\hat{U}}e^{j\omega t}=\underline{u}(t)$
+		\item[] $Re\ \underline{u}(t)=\hat{U}\cos(\omega t+\varphi_z+\varphi_0)$
+		\item \textbf{Differenzieren}
+		\item[] $reell: \qquad \dfrac{du}{dt}(t)=-\omega\hat{U}\sin(\omega t+\varphi_0)=\omega\hat{U}\cos\big(\omega t+\varphi_0+\dfrac{\pi}{2}\big)$
+		\item[] $komplex: \qquad \dfrac{d\underline{u}}{dt}(t)=j\omega\hat{U}e^{j\varphi_0}e^{j\omega t}=\omega\hat{U}e^{j\varphi_0}e^{\frac{j\pi}{2}}e^{j\omega t}=\omega \hat{U}e^{j(\omega t+\varphi_0+\frac{\pi}{2})}$
+		\item[] $\rightarrow \dfrac{d}{dt}\hat{=}j\omega$
+		\item \textbf{Integrieren}
+		\item[] $reell: \qquad \displaystyle\int u(t)dt=\dfrac{\hat{U}}{\omega}\sin(\omega t+\varphi_0)=\dfrac{\hat{U}}{\omega}\cos\big(\omega t+\varphi_0+\dfrac{\pi}{2}\big)$
+		\item[] $komplex: \qquad \displaystyle\int\underline{u}(t)dt=\hat{U}e^{j\varphi_0}\dfrac{1}{j\omega}e^{j\omega t}=\hat{U}e^{j\varphi_0}\dfrac{1}{\omega}e^{-\frac{j\pi}{2}}e^{j\omega t}=\dfrac{\hat{U}}{\omega}e^{j(\omega t+\varphi_0-\frac{j\pi}{2})}$
+		\item[] $\rightarrow \displaystyle\int dt\hat{=}\dfrac{1}{j\omega}$
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\newpage
+
+\subsection{Impedanzen und Admittanzen}
+\subsubsection{Spannung-Strombeziehungen der elementaren Schaltungselemente}
+\begin{tabular}{|m{3.5cm}|m{5.5cm}|m{4.5cm}m{4cm}|}
+	\hline
+	Schema & Allgemein  &  Komplex &\\ \hline
+	\hline 
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=3.5cm]{images/Widerstand.png}
+	\end{minipage}&\begin{itemize}
+	\item[] $u(t)=Ri(t)$ 
+	\item[] $i(t)=Gu(t)$
+\end{itemize} & \begin{itemize}
+\item[] $\underline{U}=R\underline{I}$ 
+\item[] $\underline{I}=G\underline{U}$
+\end{itemize} & \begin{minipage}{.1\textwidth}
+\tabImg[width=3cm]{images/ZeigerWiderstand.png}
+\end{minipage}\\ 
+	\hline 
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=3.5cm]{images/Kondensator.png}
+	\end{minipage}& \begin{itemize}
+	\item[] $u(t)=\dfrac{1}{C}\displaystyle\int i(t)dt$
+	\item[] $i(t)=C\dfrac{du}{dt}(t)$ 
+\end{itemize} & \begin{itemize}
+\item[] $\underline{U}=\dfrac{1}{j\omega C}\underline{I}$
+\item[] $\underline{I}=j\omega C\underline{U}$
+\end{itemize} &\begin{minipage}{.1\textwidth}
+\tabImg[width=3cm]{images/KondensatorZeiger.png}
+\end{minipage}\\ 
+	\hline 
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=3.5cm]{images/Spule.png}
+	\end{minipage}& \begin{itemize}
+	\item[] $u(t)=L\dfrac{di}{dt}(t)$ 
+	\item[] $i(t)=\dfrac{1}{L}\displaystyle\int u(t)dt$
+\end{itemize} & \begin{itemize}
+\item[] $\underline{U}=j\omega L\underline{I}$
+\item[] $\underline{I}=\dfrac{1}{j\omega L}\underline{U}$
+\end{itemize} &\begin{minipage}{.1\textwidth}
+\tabImg[width=4cm]{images/SpuleZeiger.png}
+\end{minipage}\\ 
+	\hline 
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=3.5cm]{images/Transformator.png}
+	\end{minipage}& \begin{itemize}
+	\item[] $u_1(t)=L_1\dfrac{di_1}{dt}(t)+M\dfrac{di_2}{dt}(t)$ 
+	\item[] $u_2(t)=M\dfrac{di_1}{dt}(t)+L_2\dfrac{di_2}{dt}(t)$
+\end{itemize} & \begin{itemize}
+\item[] $\underline{U}_1=j\omega(L_1\underline{I}_1+M\underline{I}_2)$
+\item[] $\underline{U}_2=j\omega(M\underline{I}_1+L_2\underline{I}_2)$
+\end{itemize} &\\ 
+	\hline 
+\end{tabular}
+
+\subsubsection{Impedanz, Resistanz, Reaktanz} 
+\begin{tabular}{ | m{18cm}  | }
+	\hline
+	Formeln \\ \hline
+	\hline	
+	\begin{itemize}	
+		\item[] $Impedanz\ \underline{Z}=\dfrac{\underline{U}}{\underline{I}}=\dfrac{1}{\underline{Y}}\rightarrow \underline{Z}=Re\ \underline{Z}+j\ Im\ \underline{Z}=R+jX=|\underline{Z}|e^{j\angle \underline{Z}}=Ze^{j\varphi}$
+		\item[] $R=Realteil=Widerstand\qquad X=Imagin\ddot{a}rteil=Reaktanz$
+		\item[] $Z=|\underline{Z}|=\sqrt{R^2+X^2}=Scheinwiderstand$
+		\item[] $\varphi=\varphi_u-\varphi_i=\tan^{-1}\dfrac{X}{R}=Phasenverschiebung$
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\newpage
+
+\subsubsection{Admittanz, Konduktanz, Suszeptanz} 
+\begin{tabular}{ | m{18cm}  | }
+	\hline
+	Formeln \\ \hline
+	\hline	
+	\begin{itemize}	
+		\item[] $Admittanz\ \underline{Y}=\dfrac{\underline{I}}{\underline{U}}=\dfrac{1}{\underline{Z}}=Re\ \underline{Y}+j\ Im\ \underline{Y}=G+jB=|\underline{Y}|e^{j\angle\underline{Y}}=Ye^{-j\varphi}$
+		\item[] $G=Realteil=Konduktanz \qquad B=Imagin\ddot{a}rteil=Suszeptanz$
+		\item[] $Y=|\underline{Y}|=\sqrt{G^2+B^2}=Scheinleitwert$
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+\subsubsection{Impedanzen und Admittanzen in der komplexen Ebene}
+\begin{minipage}{.1\textwidth}
+	\tabImg[width=15cm]{images/ZeigerIA.png}
+\end{minipage}
+
+\subsubsection{Serieschaltung}
+\begin{tabular}{ | m{7cm} | m{11cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=7cm]{images/Seriekomplex.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item[] $\underline{Z}_{tot}=\dfrac{\underline{U}_{tot}}{\underline{I}}=\underline{Z}_1+\underline{Z}_2+...+\underline{Z}_N=\displaystyle\sum_{n}\underline{Z}_n$
+		\item[] $\underline{Y}_{tot}=\dfrac{1}{\underline{Z}_{tot}}=\underline{Y}_1\parallel\underline{Y}_2\parallel...\parallel\underline{Y}_N=\big(\displaystyle\sum_{n}\dfrac{1}{\underline{Y}_n}\big)^{-1}$ 
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+\newpage 
+\subsubsection{Parallelschaltung}
+\begin{tabular}{ | m{7cm} | m{11cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=7cm]{images/Parallelkomplex.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item[] $\underline{Z}_{tot}=\underline{Z}_1\parallel\underline{Z}_2\parallel...\parallel\underline{Z}_N=\big(\displaystyle\sum_{n}\dfrac{1}{\underline{Z}_n}\big)^{-1}$
+		\item[] $\underline{Y}_{tot}=\dfrac{1}{\underline{Z}_{tot}}=\underline{Y}_1+\underline{Y}_2+...+\underline{Y}_N=\displaystyle\sum_{n}\underline{Y}_n$ 
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\subsection{Leistungsbetrachtungen}
+\subsubsection{Wirkleistung}
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+		
+		\item[] $u(t)=\hat{U}\cos(\omega t+\varphi_u)$
+		\item[] $i(t)=\hat{I}\cos(\omega t+\varphi_i)$
+        \item[] $P(t)=u(t)i(t)=\hat{U}\hat{I}\cos(\omega t+\varphi_u)\cos(\omega t+\varphi_i)\stackrel{\varphi_u=\varphi_i}{=}\dfrac{\hat{U}\hat{I}}{2}\big(1+\cos(2\omega t+2\varphi_u)\big)$
+	\end{itemize}
+	&
+	\begin{itemize}
+		\item[] $P=[W]$
+		\item[] $U=[V]$
+		\item[] $I=[A]$
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Blindleistung}
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+		\item \textbf{Induktivität} $\rightarrow\ \varphi_i=\varphi_u-\dfrac{\pi}{2}$ Strom eilt der Spannung nach
+		\item[] $u(t)=\hat{U}\cos(\omega t+\varphi_u)$
+		\item[] $i(t)=\hat{I}\cos(\omega t+\varphi_i)$
+		\item[] $P(t)=u(t)i(t)=\hat{U}\hat{I}\cos(\omega t+\varphi_u)\cos(\omega t+\varphi_u-\dfrac{\pi}{2})=\dfrac{\hat{U}\hat{I}}{2}\sin(2\omega t+2\varphi_u)$
+		\item[] $W_m(t)=\dfrac{1}{2}Li^2(t)=\dfrac{1}{4}L\hat{I}^2\big(\big)$
+		\item \textbf{Kapazität} $\rightarrow\ \varphi_i=\varphi_u+\dfrac{\pi}{2}$ Strom eilt der Spannung vor
+		\item[] $u(t)=\hat{U}\cos(\omega t+\varphi_u)$
+		\item[] $i(t)=\hat{I}\cos(\omega t+\varphi_i)$
+		\item[] $P(t)=u(t)i(t)=\hat{U}\hat{I}\cos(\omega t+\varphi_u)\cos(\omega t+\varphi_u+\dfrac{\pi}{2})=-\dfrac{\hat{U}\hat{I}}{2}\sin(2\omega t+2\varphi_u)$
+	\end{itemize}
+	&
+	\begin{itemize}
+		\item[] $P=[W]$
+		\item[] $U=[V]$
+		\item[] $I=[A]$
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Scheinleistung}
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+		\item[] $mittlere\ Wirkleistung=\overline{P(t)}=P=UI\cos(\varphi_u-\varphi_i)=UI\cos\varphi$
+		\item[] $Leistungsfaktor=\cos\varphi=\dfrac{P}{S}$
+		\item[] $momentane\ Blindleistung=Q=UI\sin(\varphi_u-\varphi_i)=UI\sin\varphi$
+		\item[] $Scheinleistung=S=UI=\sqrt{P^2+Q^2}$
+	\end{itemize}
+	&
+	\begin{itemize}
+		\item[] $P=[W]$
+		\item[] $U=[V]$
+		\item[] $I=[A]$
+		\item[] $S=[VA]$
+		\item[] $Q=[var]$
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\newpage
+\subsubsection{Komplexe Leistung}
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+		\item[] $\underline{S}=P+jQ=\dfrac{1}{2}\underline{\hat{U}\hat{I}}^*=UIe^{j(\varphi_u-\varphi_i)}=UIe^{j\varphi}$
+		\item[] $\underline{S}=\underline{Z}I^2=\dfrac{1}{\underline{Y}}I^2$
+		\item[] $\underline{S}=\dfrac{1}{\underline{Z}^*}U^2=\underline{Y}^*\ U^2$
+		\item[] $S=|\underline{S}|=\sqrt{P^2+Q^2}$
+	\end{itemize}
+	&
+	\begin{itemize}
+		\item[] $P=[W]$
+		\item[] $U=[V]$
+		\item[] $I=[A]$
+		\item[] $S=[VA]$
+		\item[] $Q=[var]$
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\paragraph{Leistungs- und Impedanzdreieck}
+	\begin{minipage}{.1\textwidth}
+	\tabImg[width=17cm]{images/SIdreieck.png}
+\end{minipage}
+
+\subsubsection{Leistungsanpassung}
+\begin{tabular}{ | m{7cm} | m{11cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=7cm]{images/maxlast.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item \textbf{Leistungsanpassung bei Gleichstromnetzwerken}
+		\item[] Maximale Leistung bei $R_L=R_i$
+		\item[] $P_{L,max}=\dfrac{U_{LL}^2}{4Ri}=\dfrac{I_{KS}^2R_i}{4}$
+		\item \textbf{Leistungsanpassung bei Wechselspannungsnetzwerken}
+		\item[] Quellenimpedanz $\rightarrow \underline{Z}_i=R_i+jX_i$
+		\item[] Lastimpedanz $\rightarrow \underline{Z}_L=R_L+jX_L$
+		\item[] Komplexer Strom $\rightarrow \underline{\hat{I}}=\dfrac{\underline{\hat{U}_0}}{\underline{Z}}=\dfrac{\underline{\hat{U}_0}}{R_i+R_L+j(X_i+X_L)}$
+		\item[] Wirkleistung P $\rightarrow \dfrac{1}{2}|\underline{\hat{U}_0}|^2\dfrac{R_L}{(Ri+R_L)^2+(X_i+X_L)^2}$
+		\item[] Maximale Leistung bei $R_L=R_i$ und $X_L=-X_i$
+		\item[] $P_{L,max}=\dfrac{1}{2}|\underline{\hat{U}_0}|^2\dfrac{1}{4R_i}=\dfrac{U_0^2}{4R_i}$
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Blindstromkompensation}
+\begin{itemize}
+	\item Blindstromkompensation heisst die Blindenergien werden minimiert.
+	\item Der Leistungsfaktor $\cos\varphi$ soll maximiert und die Phasenverschiebung $|\varphi|=|\varphi_u-\varphi_i|$ soll minimiert werden.
+\end{itemize}
+
+\newpage 
+
+\subsection{Systematische, komplexe Netzwerkanalyse}
+\subsubsection{Beispiel}
+\begin{minipage}{.1\textwidth}
+	\tabImg[width=17cm]{images/Netzwerk.png}
+\end{minipage}
+\paragraph{Maschenstrommethode}
+\begin{minipage}{.1\textwidth}
+	\tabImg[width=17cm]{images/NetzwerkMM.png}
+\end{minipage}
+\begin{itemize}
+	\item \textbf{Vorgehen}
+	\item[\textcircled{1}] \underline{Schaltung vereinfachen} $\rightarrow$ Zuerst fällt auf, dass der Kondensator $C_2$ ziemlich ungünstig liegt. Es kann die Überlegung gemacht werden, dass der Strom $\underline{I}$ auch oben hineinfliesst. Somit kann der Kondensator $C_2$ auch nach oben geschoben werden. Anschliessend sollten alle Stromquellen in Spannungsquellen umgewandelt werden.
+	 \item[\textcircled{2}] \underline{Knoten, Bäume und Maschen einzeichnen} $\rightarrow$ Es sollte eine möglichst kleine Anzahl an Knoten \textcolor{brown}{\textbullet}  eingezeichnet werden, so dass ein möglichst kleiner Rechenaufwand notwendig ist. Anschliessend sollte der Baum eingezeichnet werden \textcolor{green}{\textemdash}. Die Voraussetzung des Baumes ist, dass er alle Knoten verbindet, ohne dass sich ein Kreis bildet. Zuletzt zeichnet man die Maschen ein. Die Anzahl Maschen berechnet sich mit $\boxed{m=\underbrace{z}_{Anzahl\ aller\ Zweige}-\underbrace{k}_{Knoten}+2}$. Die Anzahl Unbekannte und somit die Anzahl einzuzeichnender Maschen ergibt sich mit $\boxed{m-1-\underbrace{i}_{ideale\ Stromquellen}}$  was in diesem Beispiel 3 Maschen ergibt. Diese zeichnet man vorzugsweise in die gleiche Richtung wie die gesuchten Grössen sind oder der Einfachheit halber alle in die gleiche Richtung.
+	  \item[\textcircled{3}] \underline{Matrix aufstellen}
+	  \item[] $\left[ \begin{matrix}
+	  R_1+\underline{Z}_1 	& -\underline{Z}_1\textcolor{violet}{+j\omega M} & 0\textcolor{violet}{-j\omega M} \\ 
+	  -\underline{Z}_1	& \underline{Z}_1+\underline{Z}_2+\underline{Z}_3\textcolor{violet}{-2j\omega M} & -\underline{Z}_3\textcolor{violet}{+j\omega M}  \\ 
+	  0\textcolor{violet}{-j\omega M}	& -\underline{Z}_3\textcolor{violet}{+j\omega M} & R_3+\underline{Z}_3
+	  \end{matrix} \right]
+  \left[\begin{matrix}
+ \underline{J}_1 \\ \underline{J}_2
+\\ \underline{J}_3
+
+\end{matrix} \right]=\left[\begin{matrix}
+\underline{U}_{q1}\\ 
+0\\ -\underline{I}_{q2}R_3
+
+\end{matrix}\right] $
+\item[\textcircled{4}] \underline{Gleichungssystem lösen} $\rightarrow$ Da man das Gleichungssystem nun in der Form $\underline{Z}\underline{j}=\underline{u}$ hat, kann man durch Inversion $\underline{j}$ bestimmen $\rightarrow$ $\underline{j}=\underline{Z}^{-1}\underline{u}$ 
+\end{itemize}
+
+\newpage
+
+\paragraph{Knotenpotentialmethode}
+\begin{minipage}{.1\textwidth}
+	\tabImg[width=17cm]{images/NetzwerkKPM.png}
+\end{minipage}
+\begin{itemize}
+	\item \textbf{Vorgehen}
+	\item[\textcircled{1}] \underline{Schaltung vereinfachen} $\rightarrow$ Zuerst fällt auf, dass der Kondensator $C_2$ ziemlich ungünstig liegt. Es kann die Überlegung gemacht werden, dass der Strom $\underline{I}$ auch oben hineinfliesst. Somit kann der Kondensator $C_2$ auch nach oben geschoben werden. Anschliessend sollten alle Spannungsquellen in Stromquellen umgewandelt werden.
+	\item[\textcircled{2}] \underline{Knoten einzeichnen} $\rightarrow$ Es sollte eine möglichst kleine Anzahl an Knoten \textcolor{brown}{\textbullet}  eingezeichnet werden, so dass ein möglichst kleiner Rechenaufwand notwendig ist.Die Knoten beschriftet man und die Anzahl Gleichungen ergibt sich durch $k-1-v$ in diesem Beispiel ergeben sich so $2$ Gleichungen.
+	\item[\textcircled{3}] \underline{Matrix aufstellen}
+	\item[] $\left[\begin{matrix}
+	\dfrac{1}{R_1}+\underline{Y}_1+\underline{Y}_2	& -\underline{Y}_2 \\ 
+	-\underline{Y}_2	& \dfrac{1}{R_3}+\underline{Y}_3+\underline{Y}_2 
+	\end{matrix} \right] \left[\begin{matrix}
+	\underline{U}_1\\\underline{U}_2	\end{matrix} \right] \left[\begin{matrix}
+	\dfrac{\underline{U}_{q1}}{R_1}\\  \underline{I}_{q2}
+	
+	\end{matrix} \right]$ 
+	\item[] Auf der Hauptdiagonalen $\smallsetminus$ verbinden sich alle Admittanzen mit positivem Vorzeichen, die die jeweiligen Knoten berühren. Auf den restlichen Plätzen sind die jeweiligen Admittanzen mit negativem Vorzeichen, die die jeweiligen Knoten miteinander verbinden.
+	\item[\textcircled{4}] \underline{Gleichungssystem lösen} $\rightarrow$ Da man das Gleichungssystem nun in der Form $\underline{Y}\underline{u}=\underline{i}$ hat, kann man durch Inversion $\underline{u}$ bestimmen $\rightarrow$ $\underline{u}=\underline{Y}^{-1}\underline{i}$ 
+\end{itemize}

@@ -1,0 +1,220 @@
+\section{Dynamik des elektromagnetischen Felds: Wellen \& Strahlungsfelder}
+\subsection{Maxwellsche Gleichungen}
+
+
+\begin{tabular}{| m{7cm} m{11cm} |}
+	\hline
+	Formeln &  \\ \hline
+	\hline 
+	\begin{itemize}
+		\item \textit{Faradaysches Induktionsgesetz}
+	\end{itemize}
+	& 
+	\begin{itemize}
+		\item[] $\displaystyle\oint_{C=\partial A}\mathbf{E}\cdot d\mathbf{l}=-\dfrac{d}{dt}\displaystyle\int_{A=\partial V}\mathbf{B}\cdot d\mathbf{s}$
+	\end{itemize}
+
+	\\ 	
+	\begin{itemize}
+		\item \textit{Ampèresches Durchflutungsgesetz } 
+	\end{itemize} 
+	&
+	\begin{itemize}
+		\item[] $\displaystyle\oint_{C=\partial A}\mathbf{H}\cdot d\mathbf{l}=\displaystyle\int_{A=\partial V}\big(\mathbf{J}+\dfrac{d\mathbf{D}}{dt}\big)\cdot d\mathbf{s}$ 
+	\end{itemize}
+  \\ 
+	\begin{itemize}
+		\item \textit{Gausssches Gesetz}
+	\end{itemize} 
+	&  
+	\begin{itemize}
+		\item[] $\displaystyle\oint_{A=\partial V}\mathbf{D}\cdot d\mathbf{s}=\displaystyle\int_{V}\rho\ dv
+		$ 
+	\end{itemize}
+  \\ 
+	\begin{itemize}
+		\item \textit{Gausssches Gesetz}
+	\end{itemize} 
+	& 
+	\begin{itemize}
+		\item[] $\displaystyle\oint_{A=\partial V}\mathbf{B}\cdot d\mathbf{s}=0$ 
+	\end{itemize}
+  \\ 
+	\hline 
+\end{tabular} 
+
+\subsection{Poynting Theorem}
+\subsubsection{Energiedichte, Leistungsdichte}
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+		\item[] Energiedichte des e-Feldes $w_e=\dfrac{1}{2}\mathbf{D\cdot E}=\dfrac{1}{2}\varepsilon E$
+		\item[] Energiedichte des m-Feldes $w_m=\dfrac{1}{2}\mathbf{B\cdot H}=\dfrac{1}{2}\mu H^2=\dfrac{B^2}{2\mu}$
+		\item[] Gesamte räumliche Energiedichte $w=w_e+w_m=\dfrac{1}{2}\big(\mathbf{D\cdot E + B\cdot H}\big)$
+		\item[] Leistungsdichte $p=\mathbf{J\cdot E}=-\dfrac{dw_e}{dt}$
+		
+	\end{itemize} 
+	&   	
+	\begin{itemize}
+		\item[] $w=[\dfrac{J}{m^3}]$
+		\item[] $E=[\dfrac{V}{m}]$
+		\item[] $D=[\dfrac{C}{m^2}]$
+		\item[] $H=[\dfrac{A}{m}]$
+		\item[] $B=[T]$
+		\item[] $J=[\dfrac{A}{m^2}]$
+		\item[] $p=[\dfrac{W}{m^3}]$
+	\end{itemize} 
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Poynting-Vektor}
+\begin{tabular}{ | m{6cm} | m{12cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=6cm]{images/Poynting.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item[] Poynting-Vektor $\mathbf{S=E\times H}$
+		\item[] \textcolor{purple}{\textbf{Hinweis:} Der Poynting Vektor S gibt die Energie pro Zeiteinheit an, welche ein gewisses Flächenelement durchdringt; es handelt sich dabei folglich um eine Leistungsdichte. Der Poynting Vektor ist eine Möglichkeit um zu beschreiben ob an einem Punkt Feldenergie hinzukommt oder weggeht.}
+		\item[] Poynting-Theorem: $-\dfrac{d}{dt}\displaystyle\int_{V}(w_e+w_m)dv=\displaystyle\int_{V}p\ dv + \displaystyle\int_{A=\partial V}\mathbf{S}\cdot d\mathbf{s}$
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Poyntingscher Energieerhaltungssatz}
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten  \\ \hline
+	\hline
+	\begin{itemize}
+		\item[] $-\dfrac{1}{2}\dfrac{d}{dt}\displaystyle\int_{V}\big(\mathbf{D\cdot E+B\cdot H}\big)dv=\displaystyle\int_{V}\mathbf{J\cdot E} \ dv+\displaystyle\int_{A=\partial V}(\mathbf{E\times H})\cdot d\mathbf{s}$
+	
+	\end{itemize}   
+	&
+		\begin{itemize}
+			\item[] $E=[\dfrac{V}{m}]$
+			\item[] $D=[\dfrac{C}{m^2}]$
+			\item[] $H=[\dfrac{A}{m}]$
+			\item[] $B=[T]$
+			\item[] $J=[\dfrac{A}{m^2}]$
+			\item[] $S=[\dfrac{W}{m^2}]$
+		\end{itemize} 	
+	\\ \hline
+\end{tabular}
+
+\subsection{Retardierung (Verzögerung) \& Relativität}
+\subsubsection{Retardierung}
+\begin{tabular}{ | m{7cm} | m{11cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=7cm]{images/Retardierung.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item[] $\varphi(\mathbf{r})=\dfrac{1}{4\pi\varepsilon}\displaystyle\int_{V}\dfrac{\rho\ dv}{R} \qquad \rightarrow \qquad \varphi(\mathbf{r},t)=\dfrac{1}{4\pi\varepsilon}\displaystyle\int_{V}\dfrac{\rho(t-\frac{R}{c})dv}{R}$
+		\item[] $\mathbf{A(r)}=\dfrac{\mu}{4\pi}\displaystyle\int_{V}\dfrac{\mathbf{J}\ dv}{R} \qquad \rightarrow \qquad \mathbf{A}(\mathbf{r,}t)=\dfrac{\mu}{4\pi}\displaystyle\int_{V}\dfrac{\mathbf{J}(t-\frac{R}{c})dv}{R}$
+		\item[] \textcolor{purple}{\textbf{Hinweis:} Die Ausbreitung der Wirkungen unterliegt einer gewissen Verzögerung $\rightarrow$ \textit{Retardierung}}
+		\item[] Die Retardierung bewirkt eine Transformation der Zeitachse: 
+		\item[] $t\mapsto t-\dfrac{R}{c}=t-\dfrac{\mathbf{\big|r-r'\big|}}{c}$
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\subsection{Wellen}
+\subsubsection{Wellengleichungen}
+\begin{tabular}{ | m{18cm}  | }
+	\hline
+	Formeln \\ \hline
+	\hline
+	
+	\begin{itemize}
+
+		\item[] Wellengleichung $\dfrac{d^2}{dx^2}\psi(x,t)=\varepsilon\mu\dfrac{d^2}{dt^2}\psi(x,t)$
+		\item[] \textcolor{purple}{\textbf{Hinweis:} Diese Gleichung besagt, dass die Welle eine Funktion sein muss, bei welcher die zweite Ableitung nach dem Ort bis auf einen konstanten Faktor die zweite Ableitung nach der Zeit sein muss.}
+		
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+\newpage
+
+\subsubsection{Allgemeine Lösungen}
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten  \\ \hline
+	\hline
+	\begin{itemize}
+	\item[] Wellenfunktionen: $\psi(x,t)=f(x\pm vt)\qquad$ oder $\qquad \psi(x,t)=f(t\pm \frac{x}{v})$
+	\item[] $x=$ momentane Position
+	\item[] $v=$ Ausbreitungsgeschwindigkeit
+	\item[] $t=$ Zeit
+	\item[] Ausbreitungsgeschwindigkeit $v=c=\sqrt{\dfrac{1}{\varepsilon\mu}}$
+		
+	\end{itemize}   
+	&
+	\begin{itemize}
+		\item[] $t=[s]$
+		\item[] $v,c=[\dfrac{m}{s}]$
+
+	\end{itemize} 	
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Harmonische Lösungen}
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten  \\ \hline
+	\hline
+	\begin{itemize}
+		\item[] Harmonische Welle: $\psi(x,t)=\psi_0\cos(k(x-vt)+\varphi_0)=\psi_0\cos(kx-\omega t+\varphi_0)$
+		\item[] $\psi_0=$ Amplitude der Welle
+		\item[] $\omega=2\pi f=$ Kreisfrequenz
+		\item[] $k=$ Wellenzahl
+		\item[] $\mathbf{k}=\big[k_x,k_y,K_z\big]^T=$ Dreidimensionaler Wellenvektor
+		\item[] Wellenzahl $k=\big|\mathbf{k}\big|=\omega \sqrt{\varepsilon \mu}=\dfrac{\omega}{c}=\dfrac{2\pi}{\lambda}$
+		\item[] Phase $\varphi = kx-\omega+\varphi_0$
+		\item[] $\varphi_0= $Anfangsphase (Startphase) bei $t=0$ und $x=0$ 
+		\item[] Phasengeschwindigkeit $v_{ph}=\dfrac{\omega}{k}=f\lambda$
+	\end{itemize}   
+	&
+	\begin{itemize}
+		\item[] $t=[s]$
+		\item[] $v,c=[\dfrac{m}{s}]$
+		\item[] $k=[\dfrac{rad}{m}]$
+		\item[] $\omega=[\dfrac{rad}{s}]$
+		\item[] $f=[\dfrac{1}{s}]$
+		\item[] $c=[\dfrac{m}{s}]$
+	\end{itemize} 	
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Ebene Wellen}
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten  \\ \hline
+	\hline
+	\begin{itemize}
+		\item Erklärung
+		\item[] Ebene Wellen sind Wellen, bei denen sich die elektrische und magnetische Feldstärke gradlinig, homogen und orthogonal ausbreitet. 
+		\item Polarisation
+		\item[] Horizontal polarisiert $\rightarrow$ Der E-Feld-Vektor steht wie der Horizont zur Erde
+		\item[] Vertikal Polarisiert 
+		\item Wellenimpedanz $Z=\dfrac{\big|\mathbf{E}\big|}{\big|\mathbf{H}\big|}=\sqrt{\dfrac{\mu}{\varepsilon}}$ 
+		\item Freiraum-Wellenimpedanz $Z_0=\sqrt{\dfrac{\mu_0}{\varepsilon_0}}\approx120\pi \approx 377\Omega$
+		\item Mittlerer Leistungsfluss $\bar{S}=\dfrac{1}{2Z_0}E_0^2=\dfrac{Z_0}{2}H_0^2$ 
+	\end{itemize}   
+	&
+	\begin{itemize}
+		\item[] $Z=[\Omega]$
+		\item[] $E=[\dfrac{V}{m}]$
+		\item[] $H=[\dfrac{A}{m}]$
+	\end{itemize} 	
+	\\ \hline
+\end{tabular}

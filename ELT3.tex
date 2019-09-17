@@ -1,0 +1,45 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dokumentinformationen %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Elektrotechnik 3}
+\author{\href{mailto:urs.fischli@hsr.ch}{Urs Fischli}}
+\newcommand{\versioninfo}{$ V1.0 $}
+
+\documentclass[10pt,twoside,a4paper,fleqn]{scrartcl}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Standard Header für 
+% - Makros 
+% - Farben
+% - Mathematische Operatoren
+\include{header/zusammenfassung}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Ergänzungen für Package kommen hier hin:
+%\usepackage{hyperref}
+%\usepackage{booktabs}
+%\usepackage{ulem}
+\usepackage{textcomp}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+    \maketitle
+    \begin{center} Zusammenfassung gemäss Unterricht Hans-Dieter Lang, HS 18 \end{center}
+    \tableofcontents
+    \thispagestyle{empty}
+    \clearpage
+    %%%
+	\input{sections/Dynamik}	
+    \clearpage
+    \input{sections/Dynamikm}	
+    \clearpage
+    \input{sections/Wellen}	
+    \clearpage
+    \input{sections/Wechselstromrechnung}	
+    \clearpage
+    \input{sections/Anhang}	
+    \clearpage
+    \input{sections/Uebungen}
+    \clearpage
+    %%%
+%    \input{idiotenseite/IdiotenseiteInclude}
+\end{document}

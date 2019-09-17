@@ -1,0 +1,177 @@
+\section{Dynamik des elektrischen Felds: Ladevorgänge und Verschiebungsstrom}
+	\subsection{Lade- und Entladevorgänge}
+	\subsubsection{ELT2 - ELT3}									
+	\begin{tabular}{ | m{9cm} | m{9cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+	\tabImg[width=9cm]{images/Kondensator1.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+	\item \textbf{ELT 2: Geometrisches Problem}
+	\item[] $Q=CU$
+	\item \textbf{ELT 3: zeitlich veränderliche Grössen}
+	\item[] $Q(t)=C(t)u(t)$ 
+	\item[] $I=\dfrac{\Delta Q}{\Delta t}\rightarrow i(t)=\dfrac{dQ}{dt}(t)$
+	\item[] Ohmsches Gesetz des Kondensators $\rightarrow$ $\dfrac{i(t)}{C}=\dfrac{du}{dt}(t)$
+	\item[] \textcolor{blue}{(Herleitung: Skript s 2 (1.4))}	
+	\item[] \textcolor{purple}{\textbf{Hinweis:} Für zeitveränderliche Grössen werden grundsätzlich kleine Buchstaben verwendet (Ausnahme: $Q(t),C(t)$}
+	\item[] \textcolor{purple}{\textbf{Hinweis:} Elektrischer Strom oder Ladungstransport ergibt sich aus einer Veränderung der Kapazität $C(t)$ und/oder der Spannung $u(t)$.}
+	\end{itemize}
+	\\ \hline
+	\end{tabular}
+
+   	\subsubsection{Ladevorgang}										
+   \begin{tabular}{ | m{9cm} | m{9cm}  | }
+   	\hline
+   	Abbildung & Formeln \\ \hline
+   	\hline
+   	\begin{minipage}{.1\textwidth}
+   		\tabImg[width=9cm]{images/Ladevorgang.png}
+   	\end{minipage}
+   	&
+   	\begin{itemize}
+   		\item \textbf{Spannungswerte zum Zeitpunkt $\mathbf{t=0}$ }
+   		\item[] $U_0=u_R(0)+u_C(0)=Ri(0)$
+   		\item[] $u_C(0)=0$
+   		\item \textbf{Spannung $\mathbf{u_C(t)}$ während des Ladevorgangs}
+   		\item[] $u_C(t)=\underbrace{\dfrac{I_0\tau}{C}}_{I_0R}(1-e^{-t/\tau})$ 
+   		\item[] \textcolor{blue}{(Herleitung: Skript s 5 (1.12))}
+   		\item \textbf{Ladestrom zum Zeitpunkt $\mathbf{t=0}$ }
+   		\item[] $i(0)=I_0e^{-0/\tau}=I_0=\dfrac{U_0}{R}$
+   		\item \textbf{Strom $\mathbf{i(t)}$ während des Ladevorgangs}
+   		\item[] $i(t)=I_0e^{-t/\tau}$
+   		\item[] \textcolor{purple}{\textbf{Hinweis:} An einem Kondensator kann die Spannung nicht sofort ändern; die Spannungsänderung ist stets proportional zum fliessenden Strom}
+   		\item[] \textcolor{purple}{\textbf{Hinweis:} In diesem Beispiel wird der Kondensator aufgrund des geschlossenen Schalters $S_1$ durch eine reale Spannungsquelle mit Innenwiderstand R aufgeladen}
+   	\end{itemize}   	
+   	\\ \hline
+   \end{tabular}
+
+   	\subsubsection{Zeitlicher Vorgang}										
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+		\item[] $\tau = RC$
+		\item[] $t=n\tau$
+		\item[] \textcolor{purple}{\textbf{Hinweis:} Ab $t\approx5\tau$ stellt sich wieder ein stationärer Zustand ein $\rightarrow$ der Lade-/Entladevorgang wird als abgeschlossen bezeichnet}
+	\end{itemize} 
+	&   	
+	\begin{itemize}
+		\item[] $\tau,t = [s]$
+		\item[] $R=[\Omega]$
+		\item[] $C=[F]$
+		\item[] $n=[1]$		
+	\end{itemize} 
+	\\ \hline
+\end{tabular}
+
+   	\subsubsection{Entladevorgang}										
+\begin{tabular}{ | m{9cm} | m{9cm}  | }
+	\hline
+	Abbildung & Formeln \\ \hline
+	\hline
+	\begin{minipage}{.1\textwidth}
+		\tabImg[width=9cm]{images/Entladevorgang.png}
+	\end{minipage}
+	&
+	\begin{itemize}
+		\item \textbf{Spannungswerte zum Zeitpunkt $\mathbf{t=0}$ }
+		\item[] $u_C(0)=u_R(0)=Ri(0)$
+		\item \textbf{Spannung $\mathbf{u_C(t)}$ während des Entladevorgangs}
+		\item[] $u_C(t)=RI_0e^{-t/\tau}$ 
+		\item[] \textcolor{blue}{(Herleitung: Skript s 5 (1.12))}
+		\item \textbf{Entladestrom zum Zeitpunkt $\mathbf{t=0}$ }
+		\item[] $i(0)=I_0=-\dfrac{u_C(0)}{R}$
+		\item \textbf{Strom $\mathbf{i(t)}$ während des Entladevorgangs}
+		\item[] $i(t)=-I_0e^{-t/\tau}$
+		\item[] \textcolor{purple}{\textbf{Hinweis:} Wird bei geöffnetem Schalter $S_1$ der Schalter $S_2$ geschlossen, so fliesst ein Strom aus dem Kondensator heraus (somit ergibt sich ein negatives Vorzeichen).}
+	\end{itemize}   	
+	\\ \hline
+\end{tabular}
+
+   	\subsection{Energie und Leistung}
+   	
+   			
+     	\subsubsection{Leistung, Energie}										
+  \begin{tabular}{ | m{6cm} | m{12cm}  | }
+  	\hline
+  	Abbildung & Formeln \\ \hline
+  	\hline
+  	\begin{minipage}{.1\textwidth}
+  		\tabImg[width=6cm]{images/Leistung.png}
+  	\end{minipage}
+  	&
+  	\begin{itemize}
+	\item[] $P(t)=u(t)i(t)=Cu(t)\dfrac{du}{dt}$ $\rightarrow$ $\Rightarrow$ $P_C(t)=u_C(t)i_C(t)=Cu_C(t)\dfrac{du_C}{dt}$ 
+	\item[] $W_C(t)=\dfrac{1}{2}Cu_C^2(t)$
+    \item[] $\Delta W_C=\dfrac{1}{2}Cu_C^2(t_2)-\dfrac{1}{2}Cu_C^2(t_1)=W_C(t_2)-W_C(t_1)$ 
+    \item[]\textcolor{blue}{Herleitung: Skript s 6 (1.18)}   
+  	\end{itemize}   	
+  	\\ \hline
+  \end{tabular} 	
+
+\subsection{Verschiebungsstrom}
+
+\subsubsection{Verschiebungsstromdichte}
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+		\item[] $\mathbf{J_\upsilon}=\dfrac{d\mathbf{D}}{dt}$
+	\end{itemize} 
+	&   	
+	\begin{itemize}
+		\item[] $J_\upsilon=[\frac{A}{m^2}]$
+		\item[] $D=[\frac{C}{m^2}]$
+		\item[]	$t=[s]$
+	\end{itemize} 
+	\\ \hline
+\end{tabular}
+
+\subsubsection{Zusammensetzung von elektrischem Strom}
+	\begin{itemize}
+	\item \textbf{$\mathbf{J_{frei}}$:} freie Ströme von sich bewegenden freien Ladungen
+	\item \textbf{$\mathbf{J_{gebunden}}$:} gebundene Ströme von sich bewegenden gebundenen Ladungen
+    \item \textbf{$\mathbf{J_{\upsilon}}$:} Verschiebungsströme - je nachdem von sich verlagernden elektrischen Dipolen (gebundenen Ladungswolken) oder auch nichts bewegliches
+    \item \textcolor{purple}{\textbf{Hinweis:} Elektrischer Strom setzt sich grundsätzlich aus diesen 3 Teilen zusammen.}
+\end{itemize} 
+
+\subsubsection{Gesetze zur Verschiebungsstromdichte}
+\begin{tabular}{ | m{15cm} | m{3cm}  | }
+	\hline
+	Formeln & Einheiten \\ \hline
+	\hline
+	\begin{itemize}
+    \item  \textbf{Maxwellsche Gleichung (Vollständiges Durchflutungsgesetz):}
+	\item[]  $\displaystyle\int_{C=\partial A} \mathbf{H}\cdot d \mathbf{l}=\displaystyle\int_{A}(\mathbf{J}+\dfrac{d\mathbf{D}}{dt})\cdot d\mathbf{s}$
+	\itemsep12pt
+	\item \textbf{Gaussches Gesetz des sich zeitlich ändernden Strom:}
+	\item[] $\displaystyle\int_{H\ddot{u}lle}\mathbf{J}\cdot d\mathbf{s}+\dfrac{dQ_{eingeschlossen}}{dt}(t)=0$
+	\item \textbf{Allgemeine Form für dieses Gausssche Gesetz:}
+	\item[] $\displaystyle\oint_{A=\partial V}\mathbf{J}\cdot d\mathbf{s}=-\displaystyle\int_{V}\dfrac{d\rho_{eingeschlossen}}{dt}(t)dv=0$
+	\item \textbf{Gerenzbedingung für elektrische Ströme:}
+	\item[] $\mathbf{\hat{n}\cdot J_1=\hat{n}\cdot J_2}-\dfrac{d\rho_s}{dt}$
+	\item \textcolor{purple}{\textbf{Hinweis:} Das Knotengesetz muss für zeitlich veränderliche Ströme so erweitert werden, dass allfällige Ladungsakkumulation im Knoten berücksichtigt wird. Dies ist aus praktischen Gründen nur temporär möglich und hat deshalb für Gleichstromprobleme keine Relevanz}	
+\end{itemize}
+	&   	
+	\begin{itemize}
+		\item[] $J=[\frac{A}{m^2}]$
+		\item[] $D=[\frac{C}{m^2}]$
+		\item[]	$t=[s]$
+		\item[]	$H=[\dfrac{A}{m}]$
+		\item[]	$l=[m]$
+		\item[]	$s=[m^2]$
+		\item[] $Q=[As]$
+	\end{itemize} 
+	\\ \hline
+\end{tabular}
+
+
+
+
+   									

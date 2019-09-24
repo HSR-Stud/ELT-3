@@ -1,4 +1,4 @@
-# Physik 2
+# ELT3
 [![Build Status](https://travis-ci.org/HSR-Stud/PredMod.svg?branch=master)](https://travis-ci.org/HSR-Stud/Physik-2)
 
 
@@ -7,7 +7,7 @@ Das aktuelle PDF der Zusammenfassung findest du unter [release](https://github.c
 Ein README sollte folgende Bestandteile **zwingend** aufweisen:
 
 ### Titel
-_Kurzbeschreibung (e.g. Zusammenfasssung der Vorlesung XY Semester Jahr HSR>_
+_Kurzbeschreibung (e.g. Zusammenfasssung der Vorlesung ELT3 Semester 3 Jahr 18/19>_
     
 ### Contributors
 _Es ist nur fair, alle Leute zu erwähnen, die zu einer Zusammenfassung beigetragen haben._\
